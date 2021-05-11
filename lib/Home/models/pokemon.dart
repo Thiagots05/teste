@@ -8,6 +8,7 @@ class Pokemon {
   final String img;
 
   Pokemon({required this.name, required this.img});
+
   factory Pokemon.fromJson(Map<String, dynamic> json) =>
       _$PokemonFromJson(json);
   Map<String, dynamic> toJson() => _$PokemonToJson(this);
